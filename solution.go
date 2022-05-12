@@ -29,8 +29,10 @@ func CalcSquare(sideLen float64, sidesNum int8) float64 {
 		ans = sideLen * sideLen
 		//return ans
 	} else if sidesNum == 0 {
-		ans = math.Pi * sideLen * sideLen / 4
+		ans = math.Pi * sideLen * sideLen
 		//return ans
+	} else {
+		ans = 0
 	}
 	return ans
 }
